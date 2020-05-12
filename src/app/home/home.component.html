@@ -1,0 +1,14 @@
+<div class="container desk-container">
+  <div class="row">
+    <div class="col-md-3 col-sm-4 col-xs-6 play-card"
+    *ngFor="let card of array;let i = index"
+    >
+      <div class="flip" [attr.data-index]="i" (click)="onIconClick($event)">
+        <div class="a"> 
+          <span class="icon">
+            <fa-icon [icon]="array[i].icon" size="5x"></fa-icon></span>
+        </div>   
+      </div>   
+    </div>
+  </div>
+</div>
